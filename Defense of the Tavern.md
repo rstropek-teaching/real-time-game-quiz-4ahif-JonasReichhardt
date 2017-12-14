@@ -4,7 +4,7 @@
 
 
 
-### Story
+## Story
 
 What's better than cracking open a cold one with your best friend after guard duty?
 
@@ -20,7 +20,7 @@ You look into your friends eyes drawing your weapons simultaneously and letting 
 
 
 
-### Design
+## Design
 
 ![DotT](DotT.png)
 
@@ -28,7 +28,7 @@ You look into your friends eyes drawing your weapons simultaneously and letting 
 
 
 
-### Gameplay
+## Gameplay
 
 At the start of the game you have to choose between three weapons:
 
