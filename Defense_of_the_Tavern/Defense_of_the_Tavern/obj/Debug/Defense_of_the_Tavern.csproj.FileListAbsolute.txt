@@ -1,0 +1,7 @@
+D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\bin\TypeScriptHTMLApp1.dll.config
+D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\bin\TypeScriptHTMLApp1.dll
+D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\bin\TypeScriptHTMLApp1.pdb
+D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Debug\Defense_of_the_Tavern.csprojResolveAssemblyReference.cache
+D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Debug\Defense_of_the_Tavern.csproj.CoreCompileInputs.cache
+D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Debug\TypeScriptHTMLApp1.dll
+D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Debug\TypeScriptHTMLApp1.pdb
