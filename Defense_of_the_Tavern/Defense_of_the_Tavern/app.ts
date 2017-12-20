@@ -1,7 +1,6 @@
 ﻿/// <reference path="phaser.d.ts" />
 
-//let w: number = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) - 20;
-//let h: number = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 20;
+let scaleRatio:number = window.devicePixelRatio / 3;
 
 class SimpleGame {
     game: Phaser.Game;
@@ -40,7 +39,7 @@ class SimpleGame {
         var ground = this.platforms.create(0, this.game.world.height - 64, 'ground');
 
         //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
-        ground.scale.setTo(2, 2);
+        //ground.scale.setTo(2, 2);
 
         //  This stops it from falling away when you jump on it
         ground.body.immovable = true;
@@ -53,10 +52,11 @@ class SimpleGame {
         ledge.body.immovable = true;
 
         // The player and its settings
-        this.player = this.game.add.sprite(32, this.game.world.height - 150, 'player');
+        this.player = this.game.add.sprite(32, this.game.world.height - 250, 'player');
 
         //  We need to enable physics on the player
         this.game.physics.arcade.enable(this.player);
+        this.player.scale.setTo(2,2);
 
         //  Player physics properties. Give the little guy a slight bounce.
         this.player.body.bounce.y = 0.2;
@@ -78,13 +78,13 @@ class SimpleGame {
 
         if (this.cursors.left.isDown) {
             //  Move to the left
-            this.player.body.velocity.x = -150;
+            this.player.body.velocity.x = -250;
 
             this.player.animations.play('left');
         }
         else if (this.cursors.right.isDown) {
             //  Move to the right
-            this.player.body.velocity.x = 150;
+            this.player.body.velocity.x = 250;
 
             this.player.animations.play('right');
         }
@@ -97,7 +97,7 @@ class SimpleGame {
 
         //  Allow the player to jump if they are touching the ground.
         if (this.cursors.up.isDown && this.player.body.touching.down) {
-            this.player.body.velocity.y = -350;
+            this.player.body.velocity.y = -500;
         }
 
     }
@@ -105,6 +105,6 @@ class SimpleGame {
 }
 
 window.onload = () => {
-    const game = new Phaser.Game(800, 600, Phaser.AUTO, 'content');
+    const game = new Phaser.Game((window.innerWidth-25) * window.devicePixelRatio, (window.innerHeight-25) * window.devicePixelRatio, Phaser.AUTO, 'content');
     game.state.add('Game', SimpleGame, true);
 };

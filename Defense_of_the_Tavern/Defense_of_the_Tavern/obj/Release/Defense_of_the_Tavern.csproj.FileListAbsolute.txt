@@ -5,3 +5,10 @@ D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\De
 D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Release\TypeScriptHTMLApp1.dll
 D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Release\TypeScriptHTMLApp1.pdb
 D:\!Schule\NVS\4.Klasse\Mobile Computing\UE12_Game\DotT\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Release\Defense_of_the_Tavern.csprojResolveAssemblyReference.cache
+C:\repos\real-time-game-quiz-4ahif-JonasReichhardt\Defense_of_the_Tavern\Defense_of_the_Tavern\bin\TypeScriptHTMLApp1.dll.config
+C:\repos\real-time-game-quiz-4ahif-JonasReichhardt\Defense_of_the_Tavern\Defense_of_the_Tavern\bin\TypeScriptHTMLApp1.dll
+C:\repos\real-time-game-quiz-4ahif-JonasReichhardt\Defense_of_the_Tavern\Defense_of_the_Tavern\bin\TypeScriptHTMLApp1.pdb
+C:\repos\real-time-game-quiz-4ahif-JonasReichhardt\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Release\Defense_of_the_Tavern.csprojResolveAssemblyReference.cache
+C:\repos\real-time-game-quiz-4ahif-JonasReichhardt\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Release\Defense_of_the_Tavern.csproj.CoreCompileInputs.cache
+C:\repos\real-time-game-quiz-4ahif-JonasReichhardt\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Release\TypeScriptHTMLApp1.dll
+C:\repos\real-time-game-quiz-4ahif-JonasReichhardt\Defense_of_the_Tavern\Defense_of_the_Tavern\obj\Release\TypeScriptHTMLApp1.pdb
