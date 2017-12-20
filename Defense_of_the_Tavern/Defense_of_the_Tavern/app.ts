@@ -8,11 +8,13 @@ class SimpleGame {
     player: Phaser.Sprite;
     ground: Phaser.Sprite;
     cursors: Phaser.CursorKeys;
+    sword: Phaser.Sprite;
 
     preload() {
         this.game.load.image('bg', 'Assets/background.bmp');
         this.game.load.image('ground', 'Assets/ground.bmp');
-        this.game.load.image('platform', 'Assets/platform.bmp');
+        this.game.load.image('tavern', 'Assets/Tavern.png');
+        this.game.load.image('sword', 'Assets/sword.png');
         this.game.load.spritesheet('player', 'Assets/dude.png', 32, 48);
         
     }
@@ -28,6 +30,10 @@ class SimpleGame {
 
         //  A simple background for our game
         this.game.add.sprite(0, 0, 'bg');
+
+        this.sword = this.game.add.sprite(500, 500, 'sword');
+        this.game.physics.arcade.enable(this.sword);
+        this.sword.body.gravity.y = 200;
 
         //  The platforms group contains the ground and the 2 ledges we can jump on
         this.platforms = this.game.add.group();
@@ -45,10 +51,7 @@ class SimpleGame {
         ground.body.immovable = true;
 
         //  Now let's create two ledges
-        var ledge = this.platforms.create(400, 400, 'platform');
-        ledge.body.immovable = true;
-
-        ledge = this.platforms.create(-150, 250, 'platform');
+        var ledge = this.platforms.create(this.game.world.width - (this.game.world.width-1), this.game.world.height - (this.game.world.height - 425), 'tavern');
         ledge.body.immovable = true;
 
         // The player and its settings
@@ -56,7 +59,6 @@ class SimpleGame {
 
         //  We need to enable physics on the player
         this.game.physics.arcade.enable(this.player);
-        this.player.scale.setTo(2,2);
 
         //  Player physics properties. Give the little guy a slight bounce.
         this.player.body.bounce.y = 0.2;
@@ -72,6 +74,7 @@ class SimpleGame {
 
     update() {
         let hitPlatform: boolean = this.game.physics.arcade.collide(this.player, this.platforms);
+        this.game.physics.arcade.collide(this.sword, this.platforms);
 
         //  Reset the players velocity (movement)
         this.player.body.velocity.x = 0;
