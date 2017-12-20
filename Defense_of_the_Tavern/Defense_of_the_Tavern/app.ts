@@ -11,8 +11,8 @@ class SimpleGame {
     sword: Phaser.Sprite;
 
     preload() {
-        this.game.load.image('bg', 'Assets/background.bmp');
-        this.game.load.image('ground', 'Assets/ground.bmp');
+        this.game.load.image('bg', 'Assets/background.png');
+        this.game.load.image('ground', 'Assets/ground.png');
         this.game.load.image('tavern', 'Assets/Tavern.png');
         this.game.load.image('sword', 'Assets/sword.png');
         this.game.load.spritesheet('player', 'Assets/dude.png', 32, 48);
@@ -42,17 +42,13 @@ class SimpleGame {
         this.platforms.enableBody = true;
 
         // Here we create the ground.
-        var ground = this.platforms.create(0, this.game.world.height - 64, 'ground');
+        var ground = this.platforms.create(0, this.game.world.height - 20, 'ground');
 
         //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
         //ground.scale.setTo(2, 2);
 
         //  This stops it from falling away when you jump on it
         ground.body.immovable = true;
-
-        //  Now let's create two ledges
-        var ledge = this.platforms.create(this.game.world.width - (this.game.world.width-1), this.game.world.height - (this.game.world.height - 425), 'tavern');
-        ledge.body.immovable = true;
 
         // The player and its settings
         this.player = this.game.add.sprite(32, this.game.world.height - 250, 'player');
@@ -100,7 +96,7 @@ class SimpleGame {
 
         //  Allow the player to jump if they are touching the ground.
         if (this.cursors.up.isDown && this.player.body.touching.down) {
-            this.player.body.velocity.y = -500;
+            this.player.body.velocity.y = -150;
         }
 
     }
