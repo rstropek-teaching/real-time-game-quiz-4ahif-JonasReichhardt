@@ -4,11 +4,6 @@
 //let h: number = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 20;
 
 class SimpleGame {
-
-    constructor() {
-        this.game = new Phaser.Game(800, 600, Phaser.AUTO, 'content', { preload: this.preload, create: this.create });
-    }
-
     game: Phaser.Game;
     platforms: Phaser.Group;
     player: Phaser.Sprite;
@@ -110,7 +105,6 @@ class SimpleGame {
 }
 
 window.onload = () => {
-
-    var game = new SimpleGame();
-
+    const game = new Phaser.Game(800, 600, Phaser.AUTO, 'content');
+    game.state.add('Game', SimpleGame, true);
 };
